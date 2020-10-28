@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
+<!DOCTYPE abstract SYSTEM "file:/home/thug80/Desktop/DAW2020/T2/record.dtd">
 <record>
     <titulo>Project Record</titulo>
     <entrada>
@@ -19,16 +19,16 @@
     </workteam>
     <abstract>
         <frase>
-            No trabalho prático dois pretendia-se criar um <italic>DTD</italic> que defina um <bold>Project Record</bold>
-            tendo como auxílio o modelo apresenta em <link href="http://www4.di.uminho.pt/~jcr/PROJS/micei2002/guilherme/Project%20Record.htm?fbclid=IwAR0FGF6yvuhw2PYi0n4qkFEgKwTAWRtSoj4Hkrqltt3bHYDt65rr1xp3_cg">
-            .</link>
-           
+            No trabalho prático dois pretendia-se criar um <italic>DTD</italic> que definisse um <bold><underline>Project Record</underline></bold>.          
+        </frase>
+        <frase>Para tal, foi usado como auxílio o modelo apresentado na <link href="http://www4.di.uminho.pt/~jcr/PROJS/micei2002/guilherme/Project%20Record.htm?fbclid=IwAR0FGF6yvuhw2PYi0n4qkFEgKwTAWRtSoj4Hkrqltt3bHYDt65rr1xp3_cg">
+            página </link>. 
         </frase>
         
     </abstract>
     <deliverables>
-        <link href="https://home/thug80/Oxygen XML Editor 22/record.dtd" >DTD</link>
-        <link href="https://home/thug80/Oxygen XML Editor 22/record.xml" >XML</link>
+        <link href="https://github.com/AdrianaMeireles80/DAW2020/blob/main/T2/record.dtd" >DTD</link>
+        <link href="https://github.com/AdrianaMeireles80/DAW2020/blob/main/T2/record.xml" >XML</link>
         
     </deliverables>
     <data>28-10-2020</data>
