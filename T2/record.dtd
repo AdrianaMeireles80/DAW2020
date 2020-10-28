@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT record (titulo,entrada,workteam,abstract,deliverables,data) >
+
+<!ELEMENT titulo (#PCDATA) >
+
+<!ELEMENT entrada (keyname,title,subtitle?,begin,end,supervisor) >
+<!ELEMENT keyname (#PCDATA) >
+<!ELEMENT title (#PCDATA) >
+<!ELEMENT subtitle (#PCDATA) >
+<!ELEMENT begin (#PCDATA) >
+<!ELEMENT end (#PCDATA) >
+<!ELEMENT supervisor (#PCDATA) >
+<!ATTLIST supervisor
+    href CDATA #REQUIRED >
+
+<!ELEMENT workteam (membros,membros?,membros?) >
+<!ELEMENT membros (num,nome,email) >
+<!ELEMENT num (#PCDATA) >
+<!ELEMENT nome (#PCDATA) >
+<!ELEMENT email (#PCDATA) >
+
+<!ELEMENT abstract (frase)+ >
+<!ELEMENT frase (#PCDATA|bold|italic|underline|link)* >
+<!ELEMENT bold (#PCDATA|italic|underline|link)* >
+<!ELEMENT italic (#PCDATA|bold|underline|link)* >
+<!ELEMENT underline (#PCDATA|bold|italic|link)* >
+
+<!ELEMENT deliverables (link)+ >
+<!ELEMENT link (#PCDATA) >    
+<!ATTLIST link
+    href CDATA #REQUIRED>
+    
+<!ELEMENT data (#PCDATA) >
+

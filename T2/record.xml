@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<record>
+    <titulo>Project Record</titulo>
+    <entrada>
+        <keyname>T2</keyname>
+        <title>DTD e XML</title>
+        <subtitle>Relatório inserido nos trabalhos práticos da cadeira de Desenvolvimento Aplicações Web</subtitle>
+        <begin>21-10-2020</begin>
+        <end>28-10-2020</end>
+        <supervisor href="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+    </entrada>    
+    <workteam>
+        <membros>
+            <num>A82582</num>
+            <nome>Adriana Henriques Esteves Teixeira Meireles</nome>
+            <email>a82582@alunos.uminho.pt</email>
+        </membros>        
+    </workteam>
+    <abstract>
+        <frase>
+            No trabalho prático dois pretendia-se criar um <italic>DTD</italic> que defina um <bold>Project Record</bold>
+            tendo como auxílio o modelo apresenta em <link href="http://www4.di.uminho.pt/~jcr/PROJS/micei2002/guilherme/Project%20Record.htm?fbclid=IwAR0FGF6yvuhw2PYi0n4qkFEgKwTAWRtSoj4Hkrqltt3bHYDt65rr1xp3_cg">
+            .</link>
+           
+        </frase>
+        
+    </abstract>
+    <deliverables>
+        <link href="https://home/thug80/Oxygen XML Editor 22/record.dtd" >DTD</link>
+        <link href="https://home/thug80/Oxygen XML Editor 22/record.xml" >XML</link>
+        
+    </deliverables>
+    <data>28-10-2020</data>
+
+</record>
