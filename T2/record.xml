@@ -23,14 +23,11 @@
         </frase>
         <frase>Para tal, foi usado como auxílio o modelo apresentado na <link href="http://www4.di.uminho.pt/~jcr/PROJS/micei2002/guilherme/Project%20Record.htm?fbclid=IwAR0FGF6yvuhw2PYi0n4qkFEgKwTAWRtSoj4Hkrqltt3bHYDt65rr1xp3_cg">
             página </link>. 
-        </frase>
-        
+        </frase>        
     </abstract>
     <deliverables>
         <link href="https://github.com/AdrianaMeireles80/DAW2020/blob/main/T2/record.dtd" >DTD</link>
-        <link href="https://github.com/AdrianaMeireles80/DAW2020/blob/main/T2/record.xml" >XML</link>
-        
+        <link href="https://github.com/AdrianaMeireles80/DAW2020/blob/main/T2/record.xml" >XML</link>        
     </deliverables>
     <data>28-10-2020</data>
-
 </record>
