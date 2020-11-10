@@ -1,0 +1,13 @@
+
+TPC:
+	dataset: arq.xml
+	
+	task1: 
+		- generate files: arq1.html, arq2.html,....,arqn.html
+		- create nodejs server to answer:
+			localhost:xxxx/arqs/7 with arq7.html
+			.......
+
+		- generate an index page with hrefs of the form: localhost:xxxx/arqs/7
+
+	
