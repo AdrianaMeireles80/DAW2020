@@ -135,7 +135,7 @@
                     <p><b>Data: </b> <xsl:value-of select="DATA"/></p>    
                     
                     <address>
-                        [<a href="#{count(preceding-sibling::*)+1}">Voltar à página principal</a>]
+                        [<a href="*#{count(preceding-sibling::*)+1}">Voltar à página principal</a>]
                     </address>                    
                 </body>
             </html>
