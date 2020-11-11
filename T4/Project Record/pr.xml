@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/home/thug80/Desktop/DAW2020/T4/Project%20Record/pr.dtd">
+<pr>
+    <meta>
+        <key>TPC4</key>
+        <title>Servidor em NodeJS para website do Arqueossitio</title>
+        <subtitle>TPC4 referente à UC Desenvolvimento de Aplicações Web</subtitle>
+        <bdate>04-11-2020</bdate>
+        <edate>10-11-2020</edate>
+        <supervisor>José Carlos Ramalho</supervisor>
+    </meta>
+    <team>
+        <member id="a82582">
+            <name>Adriana Meireles</name>
+            <email>a82582@alunos.uminho.pt</email>
+            <link url="https://github.com/AdrianaMeireles80/DAW2020">Github</link>
+        </member>
+    </team>
+    <abstract>
+        <p> 
+            O principal objetivo do quarto trabalho de casa é a criação de um servidor em NodeJS capaz de receber pedidos e responder com a respetiva página <i>html</i>. Para isso,
+            dividiu-se a informação, que está em <link url="https://github.com/AdrianaMeireles80/DAW2020/blob/main/T4/arq.xml"></link>, em vários ficheiros html separados, contendo a informação de 
+            cada arqueossítio do Nordeste Português. Depois,estes ficheiros irão ser utilizados pelo servidor de modo a apresentar um <i>website</i>.
+        </p>
+        <p>
+            O servidor designado em <i>Javascript</i> responde a pedidos na porta <b>7777</b> no seguinte formato exemplo: <u>localhost:7777/arqs/12</u>, apresentando 
+            a página html do décimo segundo Arqueossítio do ficheiro inicial.
+        </p>
+    </abstract>
+    <deliverables>
+        <link url="https://github.com/AdrianaMeireles80/DAW2020/blob/main/T4/arq-split.xsl">Stylesheet para separar o Arqueossitio em documentos individuais</link>
+        <link url="https://github.com/AdrianaMeireles80/DAW2020/blob/main/T4/arq.xml">XML do Arqueossitio</link>
+        <link url="https://github.com/AdrianaMeireles80/DAW2020/blob/main/T4/server.js">Servidor</link>
+        <link url="https://github.com/AdrianaMeireles80/DAW2020/blob/main/T4/Project Record/pr.xml">Project Record - XML</link>
+    </deliverables>
+</pr>
