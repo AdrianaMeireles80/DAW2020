@@ -1,0 +1,10 @@
+TPC5:
+
+	- ter o json-server com o dataset da escola de música: alunos,cursos,instrumentos
+
+	- Criar um segundo serviço (fazer http server):
+		http://localhost:4000/ ==> index.html (Ter Lista com as 3 coleções, link com os registos de cada coleção-dinamico)
+
+	
+
+		
