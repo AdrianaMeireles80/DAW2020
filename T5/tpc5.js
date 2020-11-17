@@ -68,13 +68,13 @@ http.createServer(function(req, res){
 		}
 
 		else if(req.url == '/cursos'){//lista dos ids dos cursos
-			axios.get('http://localhost:3000/cursos') //3001 pq é a api de dados
+			axios.get('http://localhost:3000/cursos')
 
 			.then(function(resp) {
 				cursos = resp.data;
 				res.writeHead(200, {'Content-Type': 'text/html; charset=utf-8'})
 				res.write('<h2> Escola de Música:Lista de Cursos</h2>')
-				res.write('<ul>') //indice de operações -ul
+				res.write('<ul>') 
 				
 				cursos.forEach(c => {
 					res.write(`<li><a href="http://localhost:4000/cursos/${c.id}">${c.id}</a> </li>`)//ids dos cursos
@@ -82,7 +82,7 @@ http.createServer(function(req, res){
 				});
 
 				res.write('</ul>')
-				res.write('<address>[<a href="/">Voltar</a>]</adress>') //voltar à pagina inicial
+				res.write('<address>[<a href="/">Voltar</a>]</adress>') 
 				res.end()
 
 			}).catch(function(error) {
@@ -116,7 +116,7 @@ http.createServer(function(req, res){
         	});
 		}
 
-		else if(req.url == '/instrumentos'){
+		else if(req.url == '/instrumentos'){//lista dos ids dos instrumentos
 			axios.get('http://localhost:3000/instrumentos')
 
 			.then(function(resp) {
@@ -126,7 +126,7 @@ http.createServer(function(req, res){
 				res.write('<ul>')
 				
 				instrumentos.forEach(i => {
-					res.write(`<li><a href="http://localhost:4000/instrumentos/${i.id}">${i.id}</a></li>`)//lista dos ids dos instrumentos
+					res.write(`<li><a href="http://localhost:4000/instrumentos/${i.id}">${i.id}</a></li>`)//ids dos instrumentos
 				
 				});
 
