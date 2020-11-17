@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/home/thug80/Desktop/DAW2020/T4/Project%20Record/pr.dtd">
+<pr>
+    <meta>
+        <key>TPC5</key>
+        <title>Servidor em NodeJS para website da Escola de Música</title>
+        <subtitle>TPC5 referente à UC Desenvolvimento de Aplicações Web</subtitle>
+        <bdate>11-11-2020</bdate>
+        <edate>17-11-2020</edate>
+        <supervisor>José Carlos Ramalho</supervisor>
+    </meta>
+    <team>
+        <member id="a82582">
+            <name>Adriana Meireles</name>
+            <email>a82582@alunos.uminho.pt</email>
+            <link url="https://github.com/AdrianaMeireles80/DAW2020">Github</link>
+        </member>
+    </team>
+    <abstract>
+        <p> 
+            O principal objetivo do  trabalho de casa é a criação de um json-server com o dataset da escola de música, cuja informação se encontra em
+             <link url="https://github.com/AdrianaMeireles80/DAW2020/blob/main/T5/db.json"></link>. Este servidor teria que ser capaz de responder a diversos pedidos. Para tal, criou-se 
+            as respetivas listas de cada <b>aluno</b>, <b>curso</b> e <b>instrumento</b>. Posteriormente, fez-se a ligação entre essas listas através de links. Cada <i>link</i> tem de redirecionar para os dados individuais de cada aluno, 
+            de cada curso e de cada instrumento,respetivamente.
+        </p>
+        <p>
+            Para testar o programa são necessários 2 terminais. No primeiro é necessário correr 'json-server db.json', no outro terminal corre-se 'nodejs tpc5.js'. O Servidor é iniciado conseguindo assim correr o 
+            <i> webservice </i> pedido com <link url="http://localhost:4000/">este url</link>
+        </p>
+    </abstract>
+    <deliverables>
+        <link url="https://github.com/AdrianaMeireles80/DAW2020/blob/main/T5/tpc5.txt">Enunciado do TPC5</link>
+        <link url="https://github.com/AdrianaMeireles80/DAW2020/blob/main/T5/db.json">Dataset da Escola de Música</link>
+        <link url="https://github.com/AdrianaMeireles80/DAW2020/blob/main/T5/tpc5.js">Servidor</link>
+        <link url="https://github.com/AdrianaMeireles80/DAW2020/blob/main/T5/Project Record/pr.xml">Project Record - XML</link>
+    </deliverables>
+</pr>
