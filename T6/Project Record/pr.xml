@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/home/thug80/Desktop/DAW2020/T4/Project%20Record/pr.dtd">
+<pr>
+    <meta>
+        <key>TPC6</key>
+        <title>Single Page APlication para ToDo list</title>
+        <subtitle>TPC6 referente à UC Desenvolvimento de Aplicações Web</subtitle>
+        <bdate>18-11-2020</bdate>
+        <edate>24-11-2020</edate>
+        <supervisor>José Carlos Ramalho</supervisor>
+    </meta>
+    <team>
+        <member id="a82582">
+            <name>Adriana Meireles</name>
+            <email>a82582@alunos.uminho.pt</email>
+            <link url="https://github.com/AdrianaMeireles80/DAW2020">Github</link>
+        </member>
+    </team>
+    <abstract>
+        <p> 
+            O principal objetivo deste trabalho de casa é a criação de um servidor em <b>NodeJS</b> que a partir da consulta de
+             <link url="https://github.com/AdrianaMeireles80/DAW2020/blob/main/T6/db.json"></link> disponibiliza uma <u>SPA</u> (<i>Single Page Application</i>),
+             onde é possível consultar uma lista de tarefas já feitas e por fazer. Também é possível adicionar uma nova tarefa ("à mão") quando estamos na SPA.
+        </p>
+
+        <p>
+            Para testar o programa são necessários 2 terminais. No primeiro é necessário correr 'json-server db.json', no outro terminal corre-se 'npm run devstart'. Deste modo é possível gerir
+            as tarefas <link url="http://localhost:8080/">na porta 8080</link>.
+        </p>
+
+
+    </abstract>
+    <deliverables>
+        <link url="https://github.com/AdrianaMeireles80/DAW2020/blob/main/T6/db.json">Base Dados</link>
+        <link url="https://github.com/AdrianaMeireles80/DAW2020/blob/main/T6/server.js">Servidor</link>
+        <link url="https://github.com/AdrianaMeireles80/DAW2020/blob/main/T6/static.js">Funções auxiliares recursos estáticos</link>
+        <link url="https://github.com/AdrianaMeireles80/DAW2020/blob/main/T6/Project Record/pr.xml">Project Record - XML</link>
+    </deliverables>
+</pr>
