@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pr>
+    <meta>
+        <key>TPC7</key>
+        <title>Single Page APlication para ToDo list</title>
+        <subtitle>TPC6 referente à UC Desenvolvimento de Aplicações Web</subtitle>
+        <bdate>25-11-2020</bdate>
+        <edate>02-12-2020</edate>
+        <supervisor>José Carlos Ramalho</supervisor>
+    </meta>
+    <team>
+        <member id="a82582">
+            <name>Adriana Meireles</name>
+            <email>a82582@alunos.uminho.pt</email>
+            <link url="https://github.com/AdrianaMeireles80/DAW2020">Github</link>
+        </member>
+    </team>
+    <abstract>
+        <p>
+             No sexto trabalho de casa, o objetivo foi a criação de uma aplicação <i>web</i> capaz de gerir a informação acerca dos alunos de 
+            <b>Desenvolvimento de Aplicações Web</b>.Para tal, foi utilizada a <i>web application framework</i> <b>Express</b> que auxiliou na criação de uma
+            <u>REST API</u> eficiente. Para além disso, foi usada uma base de dados <i>Mongo</i> para guardar os dados dos alunos.      
+        </p>
+
+        <p>
+             A aplicação permite inserir, consultar, editar e remover os dados referente aos referidos alunos.  
+          
+        </p>
+
+    </abstract>
+    <deliverables>
+        <link url="https://github.com/AdrianaMeireles80/DAW2020/blob/main/T7/dawApp">Pasta que contém todo o trabalho</link>
+        <link url="https://github.com/AdrianaMeireles80/DAW2020/blob/main/T7/pr.xml">Project Record - XML</link>
+    </deliverables>
+</pr>

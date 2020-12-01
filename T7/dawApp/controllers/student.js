@@ -47,22 +47,10 @@ module.exports.delete = id => {
         .exec()
 }
 
-/*
-module.exports.edit = (id, entry) => {
-    
-    return Student
-    .findOneAndUpdate(
-        { numero: id },
-        { nome: entry.nome, git: entry.git},
-        { useFindAndModify: false, new: true })
-    .exec()
-        
-}
-*/
-
 module.exports.edit = student => {
+    
     return Student 
-        .updateOne({numero: student.number},{nome: student.name, git: student.git})
+        .findOneAndUpdate({numero: student.numero},{$set:{nome: student.nome, git:student.git}})
         .exec()
 }
 

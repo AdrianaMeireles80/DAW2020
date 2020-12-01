@@ -4,6 +4,9 @@ var path = require('path');
 var logger = require('morgan');
 var mongoose = require('mongoose')
 
+mongoose.set('useFindAndModify', false);
+
+
 //Set up default mongoose connection
 var mongoDB = 'mongodb://127.0.0.1/DAW2020';
 mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true});

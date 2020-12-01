@@ -10,6 +10,7 @@ router.get('/', function(req, res, next) {
   });
 });
 
+//GET /students
 router.get('/students', function(req, res) {
   // Data retrieve
   Student.list()
@@ -20,8 +21,15 @@ router.get('/students', function(req, res) {
   ;
 });
 
+/* GET registar aluno*/
+//rota: http://localhost:7700/students/register
+router.get('/students/register',function(req,res){
+  res.render('register')
+
+})
+
 /* GET users id*/
-//rota:http://localhost:7700/idALuno
+//rota:http://localhost:7700/students/idALuno
 router.get('/students/:id', function(req, res) {
 	Student.lookUp(req.params.id)
 	   .then(data => res.render('student',{
@@ -33,14 +41,9 @@ router.get('/students/:id', function(req, res) {
 
   });
 
-/* GET registar aluno*/
-//rota: http://localhost:7700/register
-router.get('/register',function(req,res){
-  res.render('register')
-
-})
 
 /*GET editar as informações de um aluno */
+//GET /students/update/:id
 router.get('/students/update/:id',function(req,res) {
   Student.lookUp(req.params.id)
     .then(data => res.render('edit', { 
@@ -53,8 +56,8 @@ router.get('/students/update/:id',function(req,res) {
 })
 
 /*POST de um aluno */
-//rota: http://localhost:7700/register
-router.post('/register',function(req,res){
+//rota: http://localhost:7700/students
+router.post('/students',function(req,res){
   Student.consult(req.body.numero, function(err, student) {
     if (err) {
       next(err)
@@ -63,33 +66,22 @@ router.post('/register',function(req,res){
       res.render('existsStu')
     }
     else {
-      next()
+      Student.insert(req.body)
+        .then(res.redirect('/students'))
+        .catch(err => res.render('error', {error: err}))
     }
   })
-}, function(req, res) {
-  
-  Student.insert(req.body)
-    .then(res.redirect('/students'))
-    .catch(err => res.render('error', {error: err}))
 })
 
 /*PUT de um aluno */
-
-
+//PUT Students/:id 
 router.post("/students/:id", function(req, res) {
 
-  console.log('ID É ' + req.params.id)
-  console.log(req.body)
-
   Student.edit(req.body)
-       .then(data => {
-          res.render('index')
-       })
-      //.then(res.redirect('/students'))
-      .catch(err => res.render('error', {
+    .then(res.redirect('/students'))
+    .catch(err => res.render('error', {
           error: err
       }))
-      res.redirect('/students') 
 })
 
 /*DELETE de um aluno */
@@ -101,7 +93,5 @@ router.post('/delete/:id',function(req,res){
 
     res.redirect('/students') //para redirecionar para a página dos estudantes
 });
-
-
 
 module.exports = router;
