@@ -3,8 +3,8 @@
 <pr>
     <meta>
         <key>TPC7</key>
-        <title>Single Page APlication para ToDo list</title>
-        <subtitle>TPC6 referente à UC Desenvolvimento de Aplicações Web</subtitle>
+        <title>Mongo e API Express</title>
+        <subtitle>TPC7 referente à UC Desenvolvimento de Aplicações Web</subtitle>
         <bdate>25-11-2020</bdate>
         <edate>02-12-2020</edate>
         <supervisor>José Carlos Ramalho</supervisor>
@@ -24,13 +24,13 @@
         </p>
 
         <p>
-             A aplicação permite inserir, consultar, editar e remover os dados referente aos referidos alunos.  
-          
+             A aplicação permite inserir, consultar, editar e remover os dados referente aos referidos alunos.           
         </p>
 
     </abstract>
     <deliverables>
         <link url="https://github.com/AdrianaMeireles80/DAW2020/blob/main/T7/dawApp">Pasta que contém todo o trabalho</link>
         <link url="https://github.com/AdrianaMeireles80/DAW2020/blob/main/T7/pr.xml">Project Record - XML</link>
+        <link url="https://github.com/AdrianaMeireles80/DAW2020/blob/main/T7/tpc.txt">Enunciado</link>
     </deliverables>
 </pr>
