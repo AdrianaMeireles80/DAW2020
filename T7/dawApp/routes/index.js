@@ -88,10 +88,9 @@ router.post("/students/:id", function(req, res) {
 router.post('/delete/:id',function(req,res){  
 
   Student.delete(req.params.id)
-    .then(dados => res.jsonp(dados))
-    .catch(erro => res.status(500).jsonp(erro))
+    .then(res.redirect('/students'))
+    .catch(err => res.render('error', {error: err}))
 
-    res.redirect('/students') //para redirecionar para a página dos estudantes
 });
 
 module.exports = router;
