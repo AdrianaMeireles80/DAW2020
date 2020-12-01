@@ -1,0 +1,36 @@
+extends layout
+
+block content
+    .w3-card-4
+      header.w3-container.w3-teal
+        h3.w3-left Students List (DAW2020)
+        
+      if list.length > 0
+        .w3-container 
+          table.w3-table-all
+            tr 
+              th Number
+              th Name
+              th Git
+              th
+            each s in list
+              tr                
+                td
+                  a(href='/students/'+ s.numero) #{s.numero}
+                td= s.nome
+                td
+                  a(href=s.git) #{s.git}
+                td
+                  form(method='POST' action=`/delete/${s.numero}`)
+                    input(type='submit' value='Apagar')    
+                td
+                  a(href='/students/update/'+s.numero)
+                    button.w3.center.w3.black Editar
+
+      else
+        .w3-container
+          p There are no students...
+      footer.w3-container.w3-teal
+            address.w3-left
+                a(href='/register')
+                    button.w3-button.w3-green.w3-margin Registar novo aluno

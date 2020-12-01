@@ -1,0 +1,61 @@
+extends layout
+
+block content
+    .w3-card-4
+        header.w3-container.w3-white
+            style.
+                .pagination {
+                display: inline-block;
+                }
+                .pagination a {
+                color: black;
+                float: left;
+                padding: 8px 16px;
+                text-decoration: none;
+                transition: background-color .3s;
+                border: 1px solid #ddd;
+                }
+                .pagination a.active {
+                background-color: LightGray;
+                color: white;
+                border: 1px solid LightGray;
+                }
+                .pagination a:hover:not(.active) {background-color: #ddd;}
+
+            h3.w3-left #{Indstudent.nome}
+        
+                .w3-container
+
+                    table.w3-table-all
+                        tr 
+                            th Number
+                                td= Indstudent.numero
+                        tr
+                            th Name
+                                td= Indstudent.nome
+
+                        tr
+                            th Git
+                                td= Indstudent.git
+                        tr
+                            - var numTPC=1
+                            each val in Indstudent.tpc
+                                tr
+                                    if(val==1)
+
+                                        td= 'TPC' + numTPC + ' feito'
+                                    else
+                                    
+                                        td= 'TPC' + numTPC + ' não feito'   
+
+                                - numTPC = numTPC + 1             
+ 
+        footer.w3-container.w3-teal
+            address.w3-right
+                a(href='/students')
+                    button.w3-button.w3-green.w3-margin Voltar
+        
+
+                    
+
+        

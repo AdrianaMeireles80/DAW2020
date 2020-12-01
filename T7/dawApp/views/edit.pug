@@ -1,0 +1,26 @@
+
+extends layout
+
+block content
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-teal.w3-margin-top
+                h3 Editar Aluno
+            .w3-container
+                form(action=`/students/${edit.numero}`, method='POST')
+                    label
+                        b Nome
+                    input.w3-input.w3-border.w3-light-grey(type="text", name="Nome", value= edit.nome)
+                    label
+                        b Número
+                    input.w3-input.w3-border.w3-light-grey(type="text", name="Número", value= edit.numero)
+                    label
+                        b Git
+                    input.w3-input.w3-border.w3-light-grey(type="text", name="Git", value= edit.git)                    
+                    
+                    input(type="submit", value="Editar")
+
+        footer.w3-container.w3-teal
+            address.w3-right
+                a(href='/students')
+                    button.w3-button.w3-green.w3-margin Voltar
