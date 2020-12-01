@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    .w3-card-4
+      header.w3-container.w3-teal
+        h3.w3-left Não é possível inserir o Aluno
+            p   Número já existente
+
+        form(method="GET" action="/students")
+                .w3-container.w3-teal         
+                    input(type="submit" value="Voltar")

@@ -55,6 +55,18 @@ router.get('/students/update/:id',function(req,res) {
 /*POST de um aluno */
 //rota: http://localhost:7700/register
 router.post('/register',function(req,res){
+  Student.consult(req.body.numero, function(err, student) {
+    if (err) {
+      next(err)
+    }
+    else if (student) {
+      res.render('existsStu')
+    }
+    else {
+      next()
+    }
+  })
+}, function(req, res) {
   
   Student.insert(req.body)
     .then(res.redirect('/students'))
