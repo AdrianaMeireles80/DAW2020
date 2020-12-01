@@ -17,7 +17,7 @@ module.exports.lookUp = id => {
 }
 
 module.exports.insert = student => {
-    /*
+    
     var aux = [0,0,0,0,0,0,0,0];
     if (student.tpc1 == 'on')
         aux[0] = 1
@@ -35,9 +35,9 @@ module.exports.insert = student => {
         aux[6] = 1
     if (student.tpc8 == 'on')
         aux[7] = 1
-    */
+    
     var newStudent = new Student(student)    
-    //newStudent.tpc = aux
+    newStudent.tpc = aux
     return newStudent.save()
 }
 

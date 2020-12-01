@@ -55,13 +55,10 @@ router.get('/students/update/:id',function(req,res) {
 /*POST de um aluno */
 //rota: http://localhost:7700/register
 router.post('/register',function(req,res){
-  console.log(req.body)
   
   Student.insert(req.body)
     .then(res.redirect('/students'))
-    .catch(err => res.render('error', {
-      error: err
-    }))
+    .catch(err => res.render('error', {error: err}))
 })
 
 /*PUT de um aluno */
