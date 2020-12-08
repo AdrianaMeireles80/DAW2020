@@ -11,19 +11,15 @@ const { fstat } = require('fs')
 var upload = multer({dest: 'uploads/'})
 
 var app = express()
-app.use(logger('dev'))// logger- so escreve a linha no fim do pedido
+app.use(logger('dev'))
 
-//TPC - PEGAR NISTO E ENVIAR MAIS DO QUE UMA OPÇÃO DE CADA VEZ
-//TPC- MULTIPLOS FICHEIROS A FUNCIONAR
-
-//coloca na pipeline de execução
 app.use(bodyParser.urlencoded({extended: false}))
 
 app.use(bodyParser.json())
 
-app.use(express.static('public')) //tudo o que esta na pasta public passa a ser indexado como recurso estatico
+app.use(express.static('public'))
 
-app.get('/',function(req,res){ // * - qualquer rota
+app.get('/',function(req,res){ 
     var d = new Date().toISOString().substr(0,16)
     var files = jsonfile.readFileSync('./dbFiles.json')
     res.writeHead(200,{'Content-Type':'text/html;charset=utf-8'})
@@ -31,7 +27,7 @@ app.get('/',function(req,res){ // * - qualquer rota
     res.end()
 })
 
-app.get('/files/upload',function(req,res){ // * - qualquer rota
+app.get('/files/upload',function(req,res){ 
     var d = new Date().toISOString().substr(0,16)
     res.writeHead(200,{'Content-Type':'text/html;charset=utf-8'})
     res.write(templates.fileForm(d))
@@ -43,9 +39,7 @@ app.get('/files/download/:fname',(req,res)=>{
 })
 
 app.post('/files',upload.array('myFile',15),function(req,res){ 
-    //req.file is the 'myFile'file
-    //req.body will hold the next fields if any
-    //multiple files: upload.array(...) => files is an array
+
     req.files.forEach(reqfile => {
 
         let oldPath=__dirname + '/' + reqfile.path
@@ -63,7 +57,6 @@ app.post('/files',upload.array('myFile',15),function(req,res){
                 name:reqfile.originalname,
                 size:reqfile.size,
                 mimetype: reqfile.mimetype,
-
             }
         )
         jsonfile.writeFileSync('./dbFiles.json',files)

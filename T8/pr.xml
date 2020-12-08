@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pr>
+    <meta>
+        <key>TPC8</key>
+        <title>Servidor em NodeJS para Gestão de Ficheiros</title>
+        <subtitle>TPC8 referente à UC Desenvolvimento de Aplicações Web</subtitle>
+        <bdate>02-12-2020</bdate>
+        <edate>09-12-2020</edate>
+        <supervisor>José Carlos Ramalho</supervisor>
+    </meta>
+    <team>
+        <member id="a82582">
+            <name>Adriana Meireles</name>
+            <email>a82582@alunos.uminho.pt</email>
+            <link url="https://github.com/AdrianaMeireles80/DAW2020">Github</link>
+        </member>
+    </team>
+    <abstract>
+        <p>
+             No oitavo trabalho de casa, o objetivo foi a criação de um servidor, utilizando a <i>web application framework</i> <b>Express</b>,
+             capaz de fazer upload de vários ficheiros. 
+        </p>
+
+        <p>
+             Deste modo, o servidor é responsável pela gestão de ficheiros, sendo possível fazer upload e download dos mesmos.           
+        </p>
+
+    </abstract>
+    <deliverables>
+        <link url="https://github.com/AdrianaMeireles80/DAW2020/blob/main/T8/upload-single">Pasta que contém todo o trabalho</link>
+        <link url="https://github.com/AdrianaMeireles80/DAW2020/blob/main/T8/ficheiros-cartoons">Pasta com as imagens</link>
+        <link url="https://github.com/AdrianaMeireles80/DAW2020/blob/main/T8/pr.xml">Project Record - XML</link>        
+    </deliverables>
+</pr>
